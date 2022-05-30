@@ -1670,6 +1670,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Program/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Program.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Program.dll": {}
+        }
       }
     }
   },
@@ -5966,11 +5976,17 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Program/1.0.0": {
+      "type": "project",
+      "path": "../Program/Program.csproj",
+      "msbuildProject": "../Program/Program.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 17.1.0",
+      "Program >= 1.0.0",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -6000,7 +6016,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/dkAdIsNu/dev/cs/BibliotekOpgave/src/Program/Program.csproj": {
+              "projectPath": "/Users/dkAdIsNu/dev/cs/BibliotekOpgave/src/Program/Program.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

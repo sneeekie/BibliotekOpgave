@@ -7,7 +7,10 @@ namespace AdrianBibliotek
         {
             Bibliotek bibObj = new Bibliotek("sønderborg bibliotek");
             Console.WriteLine(bibObj.HentBibliotek());
-            bibObj.OpretLaaner(57, "Adrian");
+            bibObj.OpretLaaner("Adrian");
+            bibObj.OpretLaaner("Christian");
+            bibObj.OpretLaaner("Nikolaj");
+            Console.WriteLine(bibObj.HentAlleLaaner());
         }
     }
 }
