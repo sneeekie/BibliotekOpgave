@@ -12,12 +12,11 @@ public class Bibliotek
     }
     public string HentBibliotek()
     {
-        return string.Format("velkommen til {0} - datoen i dag er: {1}", this._biblioteksNavn, DateTime.Today.ToString());
+        return string.Format("velkommen til {0} - datoen i dag er: {1}", this._biblioteksNavn, DateTime.Now.ToString());
     }
-    public string OpretLaaner(int nummer, string navn)
+    public void OpretLaaner(int nummer, string navn)
     {
         _laaners.Add(new Laaner(nummer, navn));
-        return string.Format("laaner oprettet.");
     }
     public string HentLaaner(int nummer, string navn, string bibnavn)
     {
