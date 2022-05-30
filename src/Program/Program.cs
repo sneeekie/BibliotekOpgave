@@ -5,8 +5,9 @@ namespace AdrianBibliotek
     {
         static void Main()
         {
-            Bibliotek bibObj = new Bibliotek("Sønderborg bibliotek");
+            Bibliotek bibObj = new Bibliotek("sønderborg bibliotek");
             Console.WriteLine(bibObj.HentBibliotek());
+            bibObj.OpretLaaner(57, "Adrian");
         }
     }
 }
