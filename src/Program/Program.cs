@@ -7,9 +7,9 @@ namespace AdrianBibliotek
         {
             Bibliotek bibObj = new Bibliotek("sønderborg bibliotek");
             Console.WriteLine(bibObj.HentBibliotek());
-            bibObj.OpretLaaner("Adrian", "");
-            bibObj.OpretLaaner("Christian", "");
-            bibObj.OpretLaaner("Nikolaj", "");
+            bibObj.OpretLaaner("Adrian", "adrian@gmail.com");
+            bibObj.OpretLaaner("Christian", "christian@gmail.com");
+            bibObj.OpretLaaner("Nikolaj", "nikolaj@gmail.com");
             Console.WriteLine(bibObj.HentAlleLaaner());
 
             while (true)

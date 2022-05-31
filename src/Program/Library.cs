@@ -28,7 +28,7 @@ public class Bibliotek
         string str = "";
         for (int i = 0; i < _laaners.Count(); i++)
         {
-            str += string.Format("lånenummer: {0} - navn: {1} er låner hos {2}\n", i, _laaners[i].navn, _biblioteksNavn);
+            str += string.Format("lånenummer: {0} - navn: {1} - mail : {2} er låner hos {3}\n", i, _laaners[i].navn, _laaners[i].mail,_biblioteksNavn);
         }
         return str;
     }
