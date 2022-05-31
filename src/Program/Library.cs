@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
+namespace AdrianBibliotek;
 
 public class Bibliotek
 {
@@ -14,13 +15,13 @@ public class Bibliotek
     {
         return string.Format("velkommen til {0} - datoen i dag er: {1}", this._biblioteksNavn, DateTime.Now.ToString());
     }
-    public void OpretLaaner(string navn)
+    public void OpretLaaner(string navn, string mail)
     {
-        _laaners.Add(new Laaner(navn));
+        _laaners.Add(new Laaner(navn, mail));
     }
-    public string HentLaaner(string navn, int nummer)
+    public string HentLaaner(string navn, int nummer, string mail)
     {
-        return string.Format("lånenummer: {0} - navn: {1} er låner hos {2}", nummer, _laaners[nummer].navn, _biblioteksNavn);
+        return string.Format("lånenummer: {0} - navn: {1} - mail: {2} er låner hos {3}", nummer, _laaners[nummer].navn, _biblioteksNavn);
     }
     public string HentAlleLaaner()
     {
