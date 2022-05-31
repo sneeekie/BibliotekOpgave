@@ -1,11 +1,10 @@
+namespace AdrianBibliotek;
 using System;
-class Laaner
-{
-    int nummer;
-    public string navn { get; init; }
-    public Laaner(int nummer, string navn)
+
+class Laaner : Person {
+    public Laaner(string navn, string mail)
+        : base(navn, mail)
     {
-        this.nummer = nummer;
-        this.navn = navn;
+
     }
 }
